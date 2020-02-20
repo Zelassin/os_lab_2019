@@ -1,0 +1,25 @@
+TASK 1
+
+cd
+cd /projects/Zelassin-os_lab_2019 
+./lab1/src/background.sh > output.log &
+cat ./output.log
+clear
+wc -m ./output.log
+
+TASK 2
+
+cd
+cd /projects/Zelassin-os_lab_2019 
+cd ./lab1/src
+cat ./cake_rhymes.txt | grep -w "cake" > ./with_cake.txt
+rm something >/dev/null  2>/dev/null
+
+TASK 3
+cd
+cd /projects/Zelassin-os_lab_2019 
+cd ./lab1/src
+chmod a+rwx hello.sh
+ls -l
+chmod a+x datepath.sh
+./datepath.sh
