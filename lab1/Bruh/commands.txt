@@ -23,3 +23,12 @@ chmod a+rwx hello.sh
 ls -l
 chmod a+x datepath.sh
 ./datepath.sh
+
+TASK 4
+cd
+cd /projects/Zelassin-os_lab_2019 
+cd ./lab1/src
+cp /dev/null numbers.txt
+for i in {1..150}; do od -An -N2 -i /dev/random >> numbers.txt; done
+chmod a+rwx average.sh
+./average.sh numbers.txt
